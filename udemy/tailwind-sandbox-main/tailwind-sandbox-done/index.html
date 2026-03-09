@@ -1,113 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Tailwind CSS Sandbox</title>
-  </head>
-  <body class="bg-blue-800">
-    <div class="container bg-gray-50 h-full p-6 max-w-lg">
-      <h1 class="text-3xl text-blue-800">Tailwind CSS Sandbox</h1>
-      <ul class="mt-6">
-        <li class="text-lg border border-blue-200 p-2 my-4">
-          <a class="text-blue-500 hover:text-blue-300" href="01-utility-first/index.html"
-            >Utility First Example</a
-          >
-        </li>
-        <li class="text-lg border border-blue-200 p-2 my-4">
-          <a class="text-blue-500 hover:text-blue-300" href="02-colors/index.html"
-            >Colors</a
-          >
-        </li>
-        <li class="text-lg border border-blue-200 p-2 my-4">
-          <a
-            class="text-blue-500 hover:text-blue-300"
-            href="03-container-spacing/index.html"
-            >Container & Spacing</a
-          >
-        </li>
-        <li class="text-lg border border-blue-200 p-2 my-4">
-          <a class="text-blue-500 hover:text-blue-300" href="04-typography/index.html"
-            >Typography</a
-          >
-        </li>
-        <li class="text-lg border border-blue-200 p-2 my-4">
-          <a class="text-blue-500 hover:text-blue-300" href="05-sizing/index.html"
-            >Sizing</a
-          >
-        </li>
-        <li class="text-lg border border-blue-200 p-2 my-4">
-          <a
-            class="text-blue-500 hover:text-blue-300"
-            href="06-layout-position/index.html"
-            >Layout & Position</a
-          >
-        </li>
-        <li class="text-lg border border-blue-200 p-2 my-4">
-          <a
-            class="text-blue-500 hover:text-blue-300"
-            href="07-backgrounds-shadows/index.html"
-            >Backgrounds & Shadows</a
-          >
-        </li>
-        <li class="text-lg border border-blue-200 p-2 my-4">
-          <a class="text-blue-500 hover:text-blue-300" href="08-borders/index.html"
-            >Borders & Border Radius</a
-          >
-        </li>
-        <li class="text-lg border border-blue-200 p-2 my-4">
-          <a class="text-blue-500 hover:text-blue-300" href="09-filters/index.html"
-            >Filters</a
-          >
-        </li>
-        <li class="text-lg border border-blue-200 p-2 my-4">
-          <a class="text-blue-500 hover:text-blue-300" href="10-interactivity/index.html"
-            >Interactivity</a
-          >
-        </li>
-        <li class="text-lg border border-blue-200 p-2 my-4">
-          <a class="text-blue-500 hover:text-blue-300" href="11-breakpoints/index.html"
-            >Breakpoints</a
-          >
-        </li>
-        <li class="text-lg border border-blue-200 p-2 my-4">
-          <a class="text-blue-500 hover:text-blue-300" href="12-columns/index.html"
-            >Column Layouts</a
-          >
-        </li>
-        <li class="text-lg border border-blue-200 p-2 my-4">
-          <a class="text-blue-500 hover:text-blue-300" href="13-flex/index.html"
-            >Flexbox</a
-          >
-        </li>
-        <li class="text-lg border border-blue-200 p-2 my-4">
-          <a class="text-blue-500 hover:text-blue-300" href="14-grid/index.html">Grid</a>
-        </li>
-        <li class="text-lg border border-blue-200 p-2 my-4">
-          <a
-            class="text-blue-500 hover:text-blue-300"
-            href="15-transform-transition/index.html"
-            >Transform & Transitions</a
-          >
-        </li>
-        <li class="text-lg border border-blue-200 p-2 my-4">
-          <a class="text-blue-500 hover:text-blue-300" href="16-animation/index.html"
-            >Animation</a
-          >
-        </li>
-         <li class="text-lg border border-blue-200 p-2 my-4">
-          <a class="text-blue-500 hover:text-blue-300" href="17-customization/index.html"
-            >Customization & Config</a
-          >
-        </li>
-        <li class="text-lg border border-blue-200 p-2 my-4">
-          <a class="text-blue-500 hover:text-blue-300" href="18-dark-mode/index.html"
-            >Dark Mode</a
-          >
-        </li>
-      </ul>
+</head>
+<body class="bg-gray-100 min-h-screen">
+
+    <!-- HEADER -->
+    <div class="bg-gradient-to-r from-indigo-400 to-purple-700 text-white py-16 text-center shadow-lg">
+        <p class="text-xs font-semibold tracking-widest uppercase text-purple-200 mb-3">Curso · Udemy</p>
+        <h1 class="text-5xl font-black tracking-tight">Tailwind CSS Sandbox</h1>
+        <p class="mt-3 text-purple-200 text-lg font-light">Conocimientos básicos de Tailwind CSS</p>
     </div>
-  </body>
+
+    <!-- BACK LINK -->
+    <div class="max-w-2xl mx-auto px-6 mt-8">
+        <a href="../../../index.html" class="inline-flex items-center gap-2 text-indigo-500 hover:text-purple-700 text-sm font-medium transition-colors duration-200">
+            ← Volver al portafolio
+        </a>
+    </div>
+
+    <!-- LIST -->
+    <div class="max-w-2xl mx-auto px-6 py-8">
+
+        <p class="text-xs font-semibold tracking-widest uppercase text-gray-400 mb-6">Lecciones — 18 en total</p>
+
+        <ul class="flex flex-col gap-4">
+
+            <li class="bg-white rounded-2xl shadow-sm border border-purple-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <a href="01-utility-first/index.html" class="flex items-center justify-between px-7 py-5">
+                    <div class="flex items-center gap-5">
+                        <span class="text-3xl font-black text-purple-200 w-10">01</span>
+                        <div>
+                            <h2 class="text-base font-semibold text-gray-800">Utility First Example</h2>
+                            <span class="text-xs text-gray-400 font-light">Introducción al enfoque utility-first</span>
+                        </div>
+                    </div>
+                    <span class="text-indigo-400 text-sm font-medium">Ver →</span>
+                </a>
+            </li>
+
+            <li class="bg-white rounded-2xl shadow-sm border border-purple-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <a href="02-colors/index.html" class="flex items-center justify-between px-7 py-5">
+                    <div class="flex items-center gap-5">
+                        <span class="text-3xl font-black text-purple-200 w-10">02</span>
+                        <div>
+                            <h2 class="text-base font-semibold text-gray-800">Colors</h2>
+                            <span class="text-xs text-gray-400 font-light">Paleta de colores de Tailwind</span>
+                        </div>
+                    </div>
+                    <span class="text-indigo-400 text-sm font-medium">Ver →</span>
+                </a>
+            </li>
+
+            <li class="bg-white rounded-2xl shadow-sm border border-purple-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <a href="03-container-spacing/index.html" class="flex items-center justify-between px-7 py-5">
+                    <div class="flex items-center gap-5">
+                        <span class="text-3xl font-black text-purple-200 w-10">03</span>
+                        <div>
+                            <h2 class="text-base font-semibold text-gray-800">Container & Spacing</h2>
+                            <span class="text-xs text-gray-400 font-light">Contenedores y espaciado</span>
+                        </div>
+                    </div>
+                    <span class="text-indigo-400 text-sm font-medium">Ver →</span>
+                </a>
+            </li>
+
+            <li class="bg-white rounded-2xl shadow-sm border border-purple-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <a href="04-typography/index.html" class="flex items-center justify-between px-7 py-5">
+                    <div class="flex items-center gap-5">
+                        <span class="text-3xl font-black text-purple-200 w-10">04</span>
+                        <div>
+                            <h2 class="text-base font-semibold text-gray-800">Typography</h2>
+                            <span class="text-xs text-gray-400 font-light">Tipografía y estilos de texto</span>
+                        </div>
+                    </div>
+                    <span class="text-indigo-400 text-sm font-medium">Ver →</span>
+                </a>
+            </li>
+
+            <li class="bg-white rounded-2xl shadow-sm border border-purple-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <a href="05-sizing/index.html" class="flex items-center justify-between px-7 py-5">
+                    <div class="flex items-center gap-5">
+                        <span class="text-3xl font-black text-purple-200 w-10">05</span>
+                        <div>
+                            <h2 class="text-base font-semibold text-gray-800">Sizing</h2>
+                            <span class="text-xs text-gray-400 font-light">Tamaños y dimensiones</span>
+                        </div>
+                    </div>
+                    <span class="text-indigo-400 text-sm font-medium">Ver →</span>
+                </a>
+            </li>
+
+            <li class="bg-white rounded-2xl shadow-sm border border-purple-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <a href="06-layout-position/index.html" class="flex items-center justify-between px-7 py-5">
+                    <div class="flex items-center gap-5">
+                        <span class="text-3xl font-black text-purple-200 w-10">06</span>
+                        <div>
+                            <h2 class="text-base font-semibold text-gray-800">Layout & Position</h2>
+                            <span class="text-xs text-gray-400 font-light">Layout y posicionamiento</span>
+                        </div>
+                    </div>
+                    <span class="text-indigo-400 text-sm font-medium">Ver →</span>
+                </a>
+            </li>
+
+            <li class="bg-white rounded-2xl shadow-sm border border-purple-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <a href="07-backgrounds-shadows/index.html" class="flex items-center justify-between px-7 py-5">
+                    <div class="flex items-center gap-5">
+                        <span class="text-3xl font-black text-purple-200 w-10">07</span>
+                        <div>
+                            <h2 class="text-base font-semibold text-gray-800">Backgrounds & Shadows</h2>
+                            <span class="text-xs text-gray-400 font-light">Fondos y sombras</span>
+                        </div>
+                    </div>
+                    <span class="text-indigo-400 text-sm font-medium">Ver →</span>
+                </a>
+            </li>
+
+            <li class="bg-white rounded-2xl shadow-sm border border-purple-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <a href="08-borders/index.html" class="flex items-center justify-between px-7 py-5">
+                    <div class="flex items-center gap-5">
+                        <span class="text-3xl font-black text-purple-200 w-10">08</span>
+                        <div>
+                            <h2 class="text-base font-semibold text-gray-800">Borders & Border Radius</h2>
+                            <span class="text-xs text-gray-400 font-light">Bordes y radio de borde</span>
+                        </div>
+                    </div>
+                    <span class="text-indigo-400 text-sm font-medium">Ver →</span>
+                </a>
+            </li>
+
+            <li class="bg-white rounded-2xl shadow-sm border border-purple-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <a href="09-filters/index.html" class="flex items-center justify-between px-7 py-5">
+                    <div class="flex items-center gap-5">
+                        <span class="text-3xl font-black text-purple-200 w-10">09</span>
+                        <div>
+                            <h2 class="text-base font-semibold text-gray-800">Filters</h2>
+                            <span class="text-xs text-gray-400 font-light">Filtros CSS</span>
+                        </div>
+                    </div>
+                    <span class="text-indigo-400 text-sm font-medium">Ver →</span>
+                </a>
+            </li>
+
+            <li class="bg-white rounded-2xl shadow-sm border border-purple-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <a href="10-interactivity/index.html" class="flex items-center justify-between px-7 py-5">
+                    <div class="flex items-center gap-5">
+                        <span class="text-3xl font-black text-purple-200 w-10">10</span>
+                        <div>
+                            <h2 class="text-base font-semibold text-gray-800">Interactivity</h2>
+                            <span class="text-xs text-gray-400 font-light">Interactividad y estados</span>
+                        </div>
+                    </div>
+                    <span class="text-indigo-400 text-sm font-medium">Ver →</span>
+                </a>
+            </li>
+
+            <li class="bg-white rounded-2xl shadow-sm border border-purple-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <a href="11-breakpoints/index.html" class="flex items-center justify-between px-7 py-5">
+                    <div class="flex items-center gap-5">
+                        <span class="text-3xl font-black text-purple-200 w-10">11</span>
+                        <div>
+                            <h2 class="text-base font-semibold text-gray-800">Breakpoints</h2>
+                            <span class="text-xs text-gray-400 font-light">Diseño responsivo</span>
+                        </div>
+                    </div>
+                    <span class="text-indigo-400 text-sm font-medium">Ver →</span>
+                </a>
+            </li>
+
+            <li class="bg-white rounded-2xl shadow-sm border border-purple-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <a href="12-columns/index.html" class="flex items-center justify-between px-7 py-5">
+                    <div class="flex items-center gap-5">
+                        <span class="text-3xl font-black text-purple-200 w-10">12</span>
+                        <div>
+                            <h2 class="text-base font-semibold text-gray-800">Column Layouts</h2>
+                            <span class="text-xs text-gray-400 font-light">Layouts con columnas</span>
+                        </div>
+                    </div>
+                    <span class="text-indigo-400 text-sm font-medium">Ver →</span>
+                </a>
+            </li>
+
+            <li class="bg-white rounded-2xl shadow-sm border border-purple-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <a href="13-flex/index.html" class="flex items-center justify-between px-7 py-5">
+                    <div class="flex items-center gap-5">
+                        <span class="text-3xl font-black text-purple-200 w-10">13</span>
+                        <div>
+                            <h2 class="text-base font-semibold text-gray-800">Flexbox</h2>
+                            <span class="text-xs text-gray-400 font-light">Layouts con Flexbox</span>
+                        </div>
+                    </div>
+                    <span class="text-indigo-400 text-sm font-medium">Ver →</span>
+                </a>
+            </li>
+
+            <li class="bg-white rounded-2xl shadow-sm border border-purple-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <a href="14-grid/index.html" class="flex items-center justify-between px-7 py-5">
+                    <div class="flex items-center gap-5">
+                        <span class="text-3xl font-black text-purple-200 w-10">14</span>
+                        <div>
+                            <h2 class="text-base font-semibold text-gray-800">Grid</h2>
+                            <span class="text-xs text-gray-400 font-light">Layouts con CSS Grid</span>
+                        </div>
+                    </div>
+                    <span class="text-indigo-400 text-sm font-medium">Ver →</span>
+                </a>
+            </li>
+
+            <li class="bg-white rounded-2xl shadow-sm border border-purple-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <a href="15-transform-transition/index.html" class="flex items-center justify-between px-7 py-5">
+                    <div class="flex items-center gap-5">
+                        <span class="text-3xl font-black text-purple-200 w-10">15</span>
+                        <div>
+                            <h2 class="text-base font-semibold text-gray-800">Transform & Transitions</h2>
+                            <span class="text-xs text-gray-400 font-light">Transformaciones y transiciones</span>
+                        </div>
+                    </div>
+                    <span class="text-indigo-400 text-sm font-medium">Ver →</span>
+                </a>
+            </li>
+
+            <li class="bg-white rounded-2xl shadow-sm border border-purple-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <a href="16-animation/index.html" class="flex items-center justify-between px-7 py-5">
+                    <div class="flex items-center gap-5">
+                        <span class="text-3xl font-black text-purple-200 w-10">16</span>
+                        <div>
+                            <h2 class="text-base font-semibold text-gray-800">Animation</h2>
+                            <span class="text-xs text-gray-400 font-light">Animaciones CSS</span>
+                        </div>
+                    </div>
+                    <span class="text-indigo-400 text-sm font-medium">Ver →</span>
+                </a>
+            </li>
+
+            <li class="bg-white rounded-2xl shadow-sm border border-purple-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <a href="17-customization/index.html" class="flex items-center justify-between px-7 py-5">
+                    <div class="flex items-center gap-5">
+                        <span class="text-3xl font-black text-purple-200 w-10">17</span>
+                        <div>
+                            <h2 class="text-base font-semibold text-gray-800">Customization & Config</h2>
+                            <span class="text-xs text-gray-400 font-light">Personalización y configuración</span>
+                        </div>
+                    </div>
+                    <span class="text-indigo-400 text-sm font-medium">Ver →</span>
+                </a>
+            </li>
+
+            <li class="bg-white rounded-2xl shadow-sm border border-purple-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <a href="18-dark-mode/index.html" class="flex items-center justify-between px-7 py-5">
+                    <div class="flex items-center gap-5">
+                        <span class="text-3xl font-black text-purple-200 w-10">18</span>
+                        <div>
+                            <h2 class="text-base font-semibold text-gray-800">Dark Mode</h2>
+                            <span class="text-xs text-gray-400 font-light">Modo oscuro</span>
+                        </div>
+                    </div>
+                    <span class="text-indigo-400 text-sm font-medium">Ver →</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-gradient-to-r from-indigo-400 to-purple-700 text-white text-center py-8 mt-4">
+        <p class="text-sm text-purple-200">&copy; 2026 <span class="text-white font-semibold">Mi Portafolio</span> · Carla Fernández Taus</p>
+    </footer>
+
+</body>
 </html>
