@@ -83,7 +83,7 @@ console.log(myArray) // lo imprimimos y sale con los nuevos elementos añadidos.
 
 // length
 
-console.log(myArray.length)
+console.log(myArray.length) // Te dice la longitud del array.
 
 // clear
 
