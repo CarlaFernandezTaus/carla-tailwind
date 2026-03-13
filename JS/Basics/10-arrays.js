@@ -85,27 +85,26 @@ console.log(myArray) // lo imprimimos y sale con los nuevos elementos añadidos.
 
 console.log(myArray.length) // Te dice la longitud del array.
 
-// clear
+// clear -- borrar el contenido del array
 
-myArray = []
-myArray.length = 0 // alternativa
+myArray = [] // Mejor inicializar el array vacio y asi lo limpiamos. 
+myArray.length = 0 // alternativa para limpiar tambien el array, decimos que la longitud es 0 (NO RECOMENDABLE)
 console.log(myArray)
 
-// slice
+// slice -- te coge los numeros dentro del rango que tu le pases sin incluir el ultimo ( es decir, del 1-3 te coge 1,2 el 3 no)
 
 myArray = ["Brais", "Moure", "mouredev", 37, true]
-
 let myNewArray = myArray.slice(1, 3)
 
 console.log(myArray)
 console.log(myNewArray)
 
-// splice
+// splice -- Elimina los elementos (1,3) quieres que empiece en el 1 y quieres que elimine 3 elementos
 
 myArray.splice(1, 3)
 console.log(myArray)
 
 myArray = ["Brais", "Moure", "mouredev", 37, true]
 
-myArray.splice(1, 2, "Nueva entrada")
+myArray.splice(1, 2, "Nueva entrada") // Desde 1 se va a cargar la posición 2 y en su lugar va a añadir "nueva entrada"
 console.log(myArray)
